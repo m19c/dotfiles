@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PRIVATE_ENV_FILE=~/.privateenv
+source ./library.sh
 
 if test ! $(which brew); then
   bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -27,22 +27,6 @@ stow -t $HOME \
   vscode \
   zsh \
   nvim
-
-require_private_env() {
-  local prompt=$1
-  local env=$2
-
-  touch $PRIVATE_ENV_FILE
-  source $PRIVATE_ENV_FILE
-
-  if grep -q $env "${PRIVATE_ENV_FILE}"; then
-    echo "${env} already present in ${PRIVATE_ENV_FILE}"
-  else
-    echo $prompt
-    read value
-    echo "${env}=${value}" >> $PRIVATE_ENV_FILE
-  fi
-}
 
 require_private_env "1Password Account ID" "OP_ACCOUNT"
 
