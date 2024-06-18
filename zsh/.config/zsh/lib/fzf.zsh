@@ -7,7 +7,6 @@ fi
 source "${HOMEBREW_PREFIX}/opt/fzf/shell/key-bindings.zsh"
 
 # enhance fzf
-source <(fzf --zsh)
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
