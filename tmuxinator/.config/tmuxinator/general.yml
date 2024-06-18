@@ -1,0 +1,13 @@
+# /Users/marc/.config/tmuxinator/general.yml
+
+name: general
+root: ~/
+
+windows:
+  - config:
+      layout: main-vertical
+      panes:
+        - " cd ~/.config && vim"
+        - "cd ~/.config"
+  - other:
+  - 1p: op account get

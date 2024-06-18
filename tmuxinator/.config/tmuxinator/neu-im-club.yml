@@ -1,0 +1,16 @@
+# /Users/marc/.config/tmuxinator/neu-im-club.de.yml
+
+name: neu-im-club
+root: ~/Development/m19c/neu-im-club
+
+windows:
+  - website:
+      layout: main-vertical
+      root: ~/Development/m19c/neu-im-club/apps/website
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      # synchronize: after
+      panes:
+        - vim
+        - {}
+  - git: lazygit
