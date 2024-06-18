@@ -1,0 +1,60 @@
+import = [
+  "~/.config/alacritty/keybindings.toml",
+  "~/.config/alacritty/themes/themes/catppuccin.toml"
+]
+
+live_config_reload = true
+
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 18
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[mouse]
+hide_when_typing = true
+
+[[mouse.bindings]]
+action = "PasteSelection"
+mouse = "Middle"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[shell]
+program = "/bin/zsh"
+
+[window]
+decorations = "full"
+dynamic_title = true
+option_as_alt = "Both"
+startup_mode = "Maximized"
+opacity = 0.90
+blur = true
+
+[window.dimensions]
+columns = 160
+lines = 80
+
+[window.padding]
+x = 12
+y = 12

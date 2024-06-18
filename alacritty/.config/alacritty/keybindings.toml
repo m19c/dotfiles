@@ -1,0 +1,34 @@
+[keyboard]
+bindings = [
+  # standard mac keybindings
+  { key = 28,      mods = "Alt",       chars = "{"  },
+  { key = 25,      mods = "Alt",       chars = "}"  },
+  { key = 37,      mods = "Alt",       chars = "@"  },
+  { key = 26,      mods = "Alt|Shift", chars = "\\" },
+  { key = 26,      mods = "Alt",       chars = "|"  },
+  { key = 45,      mods = "Alt",       chars = "~"  },
+  { key = 23,      mods = "Alt",       chars = "["  },
+  { key = 22,      mods = "Alt",       chars = "]"  },
+  { key = 24,      mods = "Alt",       chars = "'"  },
+
+  # iterm link keybindings (e.g. CMD + ENTER to toggle fullscreen)
+  { key = 36,               mods = "Command",                    action = "ToggleFullscreen" },
+  { key = "Key0",           mods = "Command",                    action = "ResetFontSize"    },
+  { key = "Equals",         mods = "Command",                    action = "IncreaseFontSize" },
+  { key = "Plus",           mods = "Command",                    action = "IncreaseFontSize" },
+  { key = "NumpadAdd",      mods = "Command",                    action = "IncreaseFontSize" },
+  { key = "Minus",          mods = "Command",                    action = "DecreaseFontSize" },
+  { key = "NumpadSubtract", mods = "Command",                    action = "DecreaseFontSize" },
+  { key = "V",              mods = "Command",                    action = "Paste"            },
+  { key = "C",              mods = "Command",                    action = "Copy"             },
+  { key = "H",              mods = "Command",                    action = "Hide"             },
+  { key = "M",              mods = "Command",                    action = "Minimize"         },
+  { key = "Q",              mods = "Command",                    action = "Quit"             },
+  { key = "W",              mods = "Command",                    action = "Quit"             },
+  { key = "N",              mods = "Command",                    action = "SpawnNewInstance" },
+  { key = "F",              mods = "Command|Control",            action = "ToggleFullscreen" },
+
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left", mods = "Alt", chars = "\u001BB" },
+
+]
