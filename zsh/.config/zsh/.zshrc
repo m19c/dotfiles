@@ -10,6 +10,7 @@ source ~/.config/zsh/lib/3p/starship.zsh
 source ~/.config/zsh/lib/3p/google.zsh
 source ~/.config/zsh/lib/3p/nvm.zsh
 source ~/.config/zsh/lib/3p/mcfly.zsh
+source ~/.config/zsh/lib/3p/gh.zsh
 
 source ~/.config/zsh/lib/lang/go.zsh
 source ~/.config/zsh/lib/lang/rust.zsh
