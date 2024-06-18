@@ -44,6 +44,9 @@ cask "tunnelblick"
 ##### UTILITIES ###################################################################################################
 ###################################################################################################################
 
+brew "tlrc"                        # MAN replacement.
+brew "kubectx"                     # Kubernetes context switcher.
+brew "bottom"                      # A customizable cross-platform graphical process/system monitor for the terminal.
 brew "neovim"                      # Vim-fork focused on extensibility and usability.
 cask "google-cloud-sdk"            # Google Cloud SDK.
 brew "imagemagick"                 # ImageMagick.
