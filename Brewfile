@@ -1,62 +1,117 @@
 tap "mas-cli/tap"
 
-#cask "microsoft-office-businesspro"
+###################################################################################################################
+##### DESKTOP TOOLING #############################################################################################
+###################################################################################################################
+
+# https://microsoft.com
+# Microsoft Office is a suite of office software developed by Microsoft.
+cask "microsoft-office-businesspro"
+
+# https://slack.com/
+# Slack is a collaboration hub for work, no matter what work you do.
 cask "slack"
+
+# https://freemacsoft.net/appcleaner/
+# AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
 cask "appcleaner"
-cask "google-cloud-sdk"
 
-brew "nvm"
-brew "mas-cli/tap/mas"
-brew "imagemagick"
-brew "bat"
-brew "exa"
-brew "git-extras"
-brew "pinentry-mac"
-brew "bcal"
-brew "git-lfs"
-brew "helm"
-brew "gitmux"
-brew "httpie"
-brew "powershell"
-brew "vault"
-brew "fd"
-brew "pre-commit"
-brew "fizz"
-brew "gnu-sed"
-brew "stern"
-brew "ca-certificates"
-brew "fontconfig"
-brew "gnupg"
-brew "stow"
-brew "jq"
-brew "yq"
-brew "xz"
-brew "tfenv"
-brew "tflint"
-brew "dog"
-brew "thefuck"
-brew "tmux"
-brew "gh"
-brew "lazygit"
-brew "tmuxinator"
-brew "grep"
-brew "mcfly"
-brew "tree-sitter"
-brew "pinentry"
-brew "git-delta"
-brew "s-search"
-brew "minikube"
+# https://www.alfredapp.com/
+# Alfred is a replacement for Spotlight, with a lot of extra features.
+cask "alfred"
 
-cask "1password-cli"
+# https://alt-tab-macos.netlify.app/
+# AltTab brings the power of Windows’s “alt-tab” window switcher to macOS.
+cask "alt-tab"
+
+# https://github.com/ianyh/Amethyst
+# Tiling window manager for macOS along the lines of xmonad.
 cask "amethyst"
-cask "font-hack-nerd-font"
-cask "ngrok"
+
+# https://github.com/alacritty/alacritty
+# Alacritty is the fastest terminal emulator in existence.
 cask "alacritty"
-cask "font-fira-code-nerd-font"
+
+# https://www.7-zip.org/
+# 7-Zip (high compression file archiver) implementation.
+brew "p7zip"
+
+# https://tunnelblick.net/
+# Tunnelblick is a free, open source graphic user interface for OpenVPN on macOS.
+cask "tunnelblick"
+
+###################################################################################################################
+##### UTILITIES ###################################################################################################
+###################################################################################################################
+
+brew "neovim"                      # Vim-fork focused on extensibility and usability.
+cask "google-cloud-sdk"            # Google Cloud SDK.
+brew "imagemagick"                 # ImageMagick.
+brew "bat"                         # A cat(1) clone with wings.
+brew "exa"                         # A modern replacement for 'ls'.
+brew "git-extras"                  # GIT utilities -- repo summary, repl, changelog population.
+brew "bcal"                        # A command-line calculator.
+brew "git-lfs"                     # Git extension for versioning large files.
+brew "pinentry-mac"                # Pinentry for GPG.
+brew "helm"                        # The Kubernetes Package Manager.
+brew "gitmux"                      # A command line tool to execute a command on multiple git repositories.
+brew "httpie"                      # A user-friendly cURL replacement.
+brew "powershell"                  # PowerShell for every system!
+brew "vault"                       # A tool for managing secrets.
+brew "fd"                          # A simple, fast and user-friendly alternative to 'find'.
+brew "pre-commit"                  # A framework for managing and maintaining multi-language pre-commit hooks.
+brew "fizz"                        # A modern parser generator for C++.
+brew "gnu-sed"                     # GNU implementation of the famous stream editor.
+brew "stern"                       # Multi pod and container log tailing for Kubernetes.
+brew "ca-certificates"             # CA certificates.
+brew "fontconfig"                  # Font configuration and customization library.
+brew "gnupg"                       # GNU Pretty Good Privacy (PGP) package.
+brew "stow"                        # GNU Stow - manage the installation of software packages.
+brew "jq"                          # Lightweight and flexible command-line JSON processor.
+brew "yq"                          # yq is a lightweight and portable command-line YAML processor.
+brew "xz"                          # General-purpose data compression with high compression ratio.
+brew "tfenv"                       # Terraform version manager.
+brew "tflint"                      # Terraform linter.
+brew "dog"                         # Command-line DNS client.
+brew "thefuck"                     # Programmatically correct mistyped console commands.
+brew "tmux"                        # Terminal multiplexer.
+brew "gh"                          # GitHub CLI.
+brew "lazygit"                     # Simple terminal UI for git commands.
+brew "tmuxinator"                  # Manage complex tmux sessions easily.
+brew "grep"                        # GNU grep, egrep and fgrep.
+brew "mcfly"                       # Fly through your shell history.
+brew "tree-sitter"                 # Parser generator tool and incremental parsing library.
+brew "pinentry"                    # Passphrase entry dialog utilizing the Assuan protocol.
+brew "git-delta"                   # Syntax-highlighting pager for git and diff output.
+brew "s-search"                    # Web search from the terminal.
+brew "minikube"                    # Run a Kubernetes cluster locally.
+brew "mas-cli/tap/mas"             # A simple command line interface for the Mac App Store. Designed for scripting and automation.
+cask "1password-cli"               # 1Password Command Line Interface.
+cask "font-hack-nerd-font"         # https://gist.github.com/davidteren/898f2dcccd42d9f8680ec69a3a5d350e
+cask "ngrok"                       # https://formulae.brew.sh/cask/ngrok
+cask "font-fira-code-nerd-font"    # FiraCode Nerd Font (Fira Code)
+brew "docker"                      # Pack, ship and run any application as a lightweight container.
+brew "docker-compose"              # Define and run multi-container Docker applications.
+
+###################################################################################################################
+##### PROGRAMMING #################################################################################################
+###################################################################################################################
+
+brew "nvm"    # NodeJS Version Manager.
+brew "rust"   # Rust programming language.
+brew "go"     # Go programming language.
+
+###################################################################################################################
+##### BROWSER #####################################################################################################
+###################################################################################################################
 
 cask "google-chrome"
 cask "firefox"
 cask "opera"
+
+###################################################################################################################
+##### VS CODE EXTENSIONS ##########################################################################################
+###################################################################################################################
 
 vscode "1password.op-vscode"
 vscode "42crunch.vscode-openapi"
