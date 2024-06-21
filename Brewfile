@@ -95,6 +95,7 @@ cask "ngrok"                       # https://formulae.brew.sh/cask/ngrok
 cask "font-fira-code-nerd-font"    # FiraCode Nerd Font (Fira Code)
 brew "docker"                      # Pack, ship and run any application as a lightweight container.
 brew "docker-compose"              # Define and run multi-container Docker applications.
+brew "zoxide"                      # A faster way to navigate your filesystem.
 
 ###################################################################################################################
 ##### PROGRAMMING #################################################################################################
