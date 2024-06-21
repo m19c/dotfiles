@@ -103,6 +103,7 @@ brew "docker-compose"              # Define and run multi-container Docker appli
 brew "nvm"    # NodeJS Version Manager.
 brew "rust"   # Rust programming language.
 brew "go"     # Go programming language.
+brew "gradle" # Gradle build automation tool.
 
 ###################################################################################################################
 ##### BROWSER #####################################################################################################
@@ -226,3 +227,4 @@ vscode "wix.vscode-import-cost"
 vscode "wmaurer.change-case"
 vscode "xaver.clang-format"
 vscode "yoavbls.pretty-ts-errors"
+vscode "vscjava.vscode-java-pack"
