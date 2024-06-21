@@ -1,187 +1,184 @@
 {
-    // global visual configuration
-    "editor.fontFamily": "MonoLisa, Fira Code, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
-    "editor.lineHeight": 32,
-    "editor.letterSpacing": 0,
-    "editor.fontWeight": "400",
-    "editor.lineNumbers": "relative",
-    "editor.cursorBlinking": "solid",
-    "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
-    //"workbench.colorTheme": "Cobalt2",
-    "terminal.integrated.fontFamily": "MonoLisa, Fira Code, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.lineHeight": 1.25,
-    "editor.renderWhitespace": "all",
-    "editor.snippetSuggestions": "top",
-    "editor.fontLigatures": true,
-    "editor.renderControlCharacters": true,
-    "editor.bracketPairColorization.enabled": true,
-    "window.closeWhenEmpty": false,
-    "window.newWindowDimensions": "inherit",
-    "window.openFilesInNewWindow": "off",
-    "window.openFoldersInNewWindow": "on",
-    "window.restoreFullscreen": false,
-    "window.restoreWindows": "all",
-    "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
-    "window.titleBarStyle": "custom",
-    "explorer.autoReveal": true,
-    "debug.toolBarLocation": "docked",
-    "breadcrumbs.enabled": true,
-    "breadcrumbs.icons": true,
+  "editor.fontFamily": "MonoLisa, Fira Code, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 32,
+  "editor.letterSpacing": 0,
+  "editor.fontWeight": "400",
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "solid",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font, MonoLisa, Fira Code, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.25,
+  "editor.renderWhitespace": "all",
+  "editor.snippetSuggestions": "top",
+  "editor.fontLigatures": true,
+  "editor.renderControlCharacters": true,
+  "editor.bracketPairColorization.enabled": true,
+  "window.closeWhenEmpty": false,
+  "window.newWindowDimensions": "inherit",
+  "window.openFilesInNewWindow": "off",
+  "window.openFoldersInNewWindow": "on",
+  "window.restoreFullscreen": false,
+  "window.restoreWindows": "all",
+  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "window.titleBarStyle": "custom",
+  "explorer.autoReveal": true,
+  "debug.toolBarLocation": "docked",
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.icons": true,
+  "editor.tabSize": 2,
+  "editor.useTabStops": false,
+  "prettier.useTabs": false,
+  // use `line` to get the standard experience.
+  "editor.cursorStyle": "block",
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+
+  // global control configuration
+  "editor.inlineSuggest.enabled": true,
+  "keyboard.dispatch": "keyCode",
+
+  // eslint & javascript / typescript configuration
+  "eslint.enable": true,
+  "javascript.validate.enable": false,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "prettier.useEditorConfig": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.requireConfig": false,
+  "prettier.semi": false,
+
+  // language specific configuration
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.linkedEditing": true
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "full"
+  },
+  "[javascriptreact]": {
+    "editor.linkedEditing": true
+  },
+  "[typescriptreact]": {
+    "editor.linkedEditing": true
+  },
+  "[helm]": {
+    "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.useTabStops": false,
-    "prettier.useTabs": false,
-    // use `line` to get the standard experience.
-    "editor.cursorStyle": "block",
-    "files.trimTrailingWhitespace": true,
-    "editor.formatOnSaveMode": "file",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": false,
-  
-    // global control configuration
-    "editor.inlineSuggest.enabled": true,
-    "keyboard.dispatch": "keyCode",
-  
-    // eslint & javascript / typescript configuration
-    "eslint.enable": true,
-    "javascript.validate.enable": false,
-    "typescript.preferences.importModuleSpecifier": "relative",
-    "prettier.useEditorConfig": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "prettier.requireConfig": false,
-    "prettier.semi": false,
-  
-    // language specific configuration
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.autoIndent": "full",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[groovy]": {
+    "editor.tabSize": 2
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.tabSize": 2
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "bungcip.better-toml"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+
+  // useful options
+  "editor.multiCursorModifier": "ctrlCmd",
+  "terminal.external.osxExec": "iTerm2.app",
+
+  // other language / tool configuration
+  "errorLens.delay": 2000,
+  "yaml.completion": true,
+  "yaml.validate": true,
+  "go.formatTool": "goimports",
+
+  "go.toolsManagement.autoUpdate": true,
+  "redhat.telemetry.enabled": false,
+
+  // emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.excludeLanguages": ["markdown", "typescript", "javascript"],
+
+  // file specific configuration
+  "files.associations": {
+    "**/kubernetes/**/*.yaml": "helm",
+    "**/.github/workflows/**/*.yml": "yaml"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["Hayvanfile.yaml", "Hayvanfile.json"],
+      "url": "https://sep-hayvan.web.app/schema/manifest.json"
     },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "fileMatch": ["deployment.yaml"],
+      "url": "https://storage.googleapis.com/br-docs/shadowbroker.v11.json"
     },
-    "[html]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.linkedEditing": true
-    },
-    "[go]": {
-      "editor.defaultFormatter": "golang.go"
-    },
-    "[terraform]": {
-      "editor.defaultFormatter": "hashicorp.terraform"
-    },
-    "[yaml]": {
-      "editor.defaultFormatter": "redhat.vscode-yaml",
-      "editor.insertSpaces": true,
-      "editor.tabSize": 2,
-      "editor.autoIndent": "full"
-    },
-    "[javascriptreact]": {
-      "editor.linkedEditing": true
-    },
-    "[typescriptreact]": {
-      "editor.linkedEditing": true
-    },
-    "[helm]": {
-      "editor.insertSpaces": true,
-      "editor.tabSize": 2,
-      "editor.useTabStops": false,
-      "editor.autoIndent": "full",
-      "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[groovy]": {
-      "editor.tabSize": 2
-    },
-    "[rust]": {
-      "editor.defaultFormatter": "rust-lang.rust-analyzer",
-      "editor.tabSize": 2
-    },
-    "[toml]": {
-      "editor.defaultFormatter": "bungcip.better-toml"
-    },
-    "[scss]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[svelte]": {
-      "editor.defaultFormatter": "svelte.svelte-vscode"
-    },
-  
-    // useful options
-    "editor.multiCursorModifier": "ctrlCmd",
-    "terminal.external.osxExec": "iTerm2.app",
-  
-    // other language / tool configuration
-    "errorLens.delay": 2000,
-    "yaml.completion": true,
-    "yaml.validate": true,
-    "go.formatTool": "goimports",
-  
-    "go.toolsManagement.autoUpdate": true,
-    "redhat.telemetry.enabled": false,
-  
-    // emmet
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.excludeLanguages": ["markdown", "typescript", "javascript"],
-  
-    // file specific configuration
-    "files.associations": {
-      "**/kubernetes/**/*.yaml": "helm",
-      "**/.github/workflows/**/*.yml": "yaml"
-    },
-    "json.schemas": [
-      {
-        "fileMatch": ["Hayvanfile.yaml", "Hayvanfile.json"],
-        "url": "https://sep-hayvan.web.app/schema/manifest.json"
-      },
-      {
-        "fileMatch": ["deployment.yaml"],
-        "url": "https://storage.googleapis.com/br-docs/shadowbroker.v11.json"
-      },
-      {
-        "fileMatch": ["shadowbroker.yaml"],
-        "url": "https://storage.googleapis.com/br-docs/shadowbroker.v12.json"
-      }
-    ],
-    "yaml.schemas": {
-      "https://sep-hayvan.web.app/schema/manifest.json": "Hayvanfile.yaml",
-      "https://storage.googleapis.com/br-docs/shadowbroker.v11.json": "deployment.yaml",
-      "https://storage.googleapis.com/br-docs/shadowbroker.v12.json": "shadowbroker.yaml"
-    },
-  
-    // github copilot configuration
-    "github.copilot.advanced": {
-      "length": 500
-    },
-    "github.copilot.enable": {
-      "*": true,
-      "yaml": true,
-      "plaintext": true,
-      "markdown": false,
-      "helm": true,
-      "terraform": true,
-      "go": true
-    },
-    "files.exclude": {
-      "**/.classpath": true,
-      "**/.project": true,
-      "**/.settings": true,
-      "**/.factorypath": true
-    },
-    "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
-    "editor.stickyScroll.enabled": true,
-    "[xml]": {
-      "editor.defaultFormatter": "redhat.vscode-xml"
-    },
-    "terraform.languageServer.enable": true,
-    "[python]": {
-      "editor.formatOnType": true
-    },
-    "vs-kubernetes": {
-      "vs-kubernetes.crd-code-completion": "disabled",
-      "vscode-kubernetes.minikube-path.mac": "/Users/marc/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
-    },
-    "svelte.enable-ts-plugin": true,
-    "workbench.activityBar.location": "top"
-  }
-  
+    {
+      "fileMatch": ["shadowbroker.yaml"],
+      "url": "https://storage.googleapis.com/br-docs/shadowbroker.v12.json"
+    }
+  ],
+  "yaml.schemas": {
+    "https://sep-hayvan.web.app/schema/manifest.json": "Hayvanfile.yaml",
+    "https://storage.googleapis.com/br-docs/shadowbroker.v11.json": "deployment.yaml",
+    "https://storage.googleapis.com/br-docs/shadowbroker.v12.json": "shadowbroker.yaml"
+  },
+
+  // github copilot configuration
+  "github.copilot.advanced": {
+    "length": 500
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": false,
+    "helm": true,
+    "terraform": true,
+    "go": true
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+  "editor.stickyScroll.enabled": true,
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "terraform.languageServer.enable": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "vs-kubernetes": {
+    "vs-kubernetes.crd-code-completion": "disabled",
+    "vscode-kubernetes.minikube-path.mac": "/Users/marc/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  },
+  "svelte.enable-ts-plugin": true,
+  "workbench.activityBar.location": "top"
+}

@@ -21,12 +21,12 @@ brew bundle
 stow -t $HOME \
   alacritty \
   gh \
-  starship \
   tmux \
   tmuxinator \
   vscode \
   zsh \
-  nvim
+  nvim \
+  oh-my-posh
 
 require_private_env "1Password Account ID" "OP_ACCOUNT"
 
