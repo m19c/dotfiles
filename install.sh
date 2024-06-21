@@ -26,7 +26,8 @@ stow -t $HOME \
   vscode \
   zsh \
   nvim \
-  oh-my-posh
+  oh-my-posh \
+  git
 
 require_private_env "1Password Account ID" "OP_ACCOUNT"
 

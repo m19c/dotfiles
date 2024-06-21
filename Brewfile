@@ -51,7 +51,7 @@ brew "neovim"                      # Vim-fork focused on extensibility and usabi
 cask "google-cloud-sdk"            # Google Cloud SDK.
 brew "imagemagick"                 # ImageMagick.
 brew "bat"                         # A cat(1) clone with wings.
-brew "exa"                         # A modern replacement for 'ls'.
+brew "eza"                         # A modern replacement for 'ls'.
 brew "git-extras"                  # GIT utilities -- repo summary, repl, changelog population.
 brew "bcal"                        # A command-line calculator.
 brew "git-lfs"                     # Git extension for versioning large files.

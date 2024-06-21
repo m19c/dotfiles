@@ -30,8 +30,9 @@ alias ktx=kubectx
 alias kns=kubens
 
 # replacement ls
-alias ls="exa --icons --group-directories-first"
-alias ll="exa --icons --group-directories-first -l"
+alias l="eza --icons=always --group-directories-first --long --git "
+alias ls="eza --icons=always --group-directories-first --long --git "
+alias ll="eza --icons=always --group-directories-first -l "
 
 # enforce grep colorful output
 alias grep="grep --color"
