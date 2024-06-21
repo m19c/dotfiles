@@ -4,6 +4,8 @@ alias dev='cd ~/Development'
 alias vi='nvim'
 alias vim='nvim'
 
+alias cd="z"
+
 # git
 alias gs="git status"
 alias gc="git commit"
@@ -42,3 +44,5 @@ alias cat="bat"
 
 # override tmuxinator
 alias tn="tmuxinator"
+
+alias lg="lazygit"
