@@ -8,6 +8,12 @@ else
   echo "brew is already installed"
 fi
 
+if [ ! -d "$HOME/.sdkman" ]; then
+  curl -s "https://get.sdkman.io" | bash
+else
+  echo "sdkman is already installed"
+fi
+
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "installing oh-my-zsh"
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
