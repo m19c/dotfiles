@@ -7,7 +7,7 @@ windows:
   - config:
       layout: main-vertical
       panes:
-        - " cd ~/.config && vim"
+        - " cd ~/Development/m19c/dotfiles && vim"
         - "cd ~/.config"
   - other:
   - 1p: op account get
