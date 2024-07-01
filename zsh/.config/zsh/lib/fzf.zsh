@@ -1,7 +1,3 @@
-if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
-  PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
-fi
-
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git --color=always"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git --color=always"
@@ -32,12 +28,12 @@ _fzf_comprun() {
   esac
 }
 
-[[ $- == *i* ]] && source "${HOMEBREW_PREFIX}/opt/fzf/shell/completion.zsh" 2> /dev/null
-
-source "${HOMEBREW_PREFIX}/opt/fzf/shell/key-bindings.zsh"
+source <(fzf --zsh)
 
 # enhance fzf
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
+
+
