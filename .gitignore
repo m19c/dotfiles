@@ -2,3 +2,4 @@
 .zcompdump*
 Brewfile.lock.json
 gh/.config/gh/hosts.yml
+Brewfile
