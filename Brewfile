@@ -96,6 +96,7 @@ cask "font-fira-code-nerd-font"    # FiraCode Nerd Font (Fira Code)
 brew "docker"                      # Pack, ship and run any application as a lightweight container.
 brew "docker-compose"              # Define and run multi-container Docker applications.
 brew "zoxide"                      # A faster way to navigate your filesystem.
+brew "fzf"                         # Command-line fuzzy finder.
 
 ###################################################################################################################
 ##### PROGRAMMING #################################################################################################
@@ -235,3 +236,4 @@ vscode "wmaurer.change-case"
 vscode "xaver.clang-format"
 vscode "yoavbls.pretty-ts-errors"
 vscode "vscjava.vscode-java-pack"
+vscode "vmware.vscode-boot-dev-pack"
