@@ -80,7 +80,7 @@ type ="rprompt"
     powerline_symbol = ""
     foreground = "#000000"
     background = "#ebcc34"
-    template = "{{.WorkspaceName}}"
+    template = " {{.WorkspaceName}} "
   [[blocks.segments]]
     type = "java"
     style = "powerline"
