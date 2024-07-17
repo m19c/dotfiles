@@ -1,4 +1,5 @@
 tap "mas-cli/tap"
+tap "tofuutils/tap"
 
 ###################################################################################################################
 ##### DESKTOP TOOLING #############################################################################################
@@ -74,6 +75,7 @@ brew "jq"                          # Lightweight and flexible command-line JSON 
 brew "yq"                          # yq is a lightweight and portable command-line YAML processor.
 brew "xz"                          # General-purpose data compression with high compression ratio.
 brew "tfenv"                       # Terraform version manager.
+brew "tofuenv"                     # OpenTofu version manager.
 brew "tflint"                      # Terraform linter.
 brew "dog"                         # Command-line DNS client.
 brew "thefuck"                     # Programmatically correct mistyped console commands.
