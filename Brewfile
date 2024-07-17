@@ -1,5 +1,6 @@
 tap "mas-cli/tap"
 tap "tofuutils/tap"
+tap "hashicorp/tap"
 
 ###################################################################################################################
 ##### DESKTOP TOOLING #############################################################################################
@@ -45,6 +46,7 @@ cask "tunnelblick"
 ##### UTILITIES ###################################################################################################
 ###################################################################################################################
 
+brew "terraform-ls"                # Terraform Language Server.
 brew "tlrc"                        # MAN replacement.
 brew "kubectx"                     # Kubernetes context switcher.
 brew "bottom"                      # A customizable cross-platform graphical process/system monitor for the terminal.

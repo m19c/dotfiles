@@ -93,6 +93,10 @@ local plugins = {
 				"dockerfile-language-server",
 				"graphql-language-service-cli",
 				"astro-language-server",
+
+				-- terraform ecosystem
+				"terraform-ls",
+				"tflint",
 			},
 		},
 	},
@@ -188,6 +192,7 @@ local plugins = {
 				"make",
 				"sql",
 				"xml",
+				"terraform",
 			},
 		},
 	},
