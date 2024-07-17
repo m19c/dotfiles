@@ -155,7 +155,7 @@
     "*": true,
     "yaml": true,
     "plaintext": true,
-    "markdown": false,
+    "markdown": true,
     "helm": true,
     "terraform": true,
     "go": true
