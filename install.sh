@@ -21,11 +21,19 @@ else
   echo "oh-my-zsh is already installed"
 fi
 
+if [ ! -d "/Applications/kitty.app" ]; then
+  echo "installing kitty"
+  curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+else
+  echo "kitty is already installed"
+fi
+
 echo "installing homebrew packages"
 brew bundle
 
 stow -t $HOME \
   alacritty \
+  kitty \
   gh \
   tmux \
   tmuxinator \

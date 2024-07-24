@@ -46,6 +46,7 @@ cask "tunnelblick"
 ##### UTILITIES ###################################################################################################
 ###################################################################################################################
 
+brew "libgit2@1.7"                 # C implementation of the Git core methods as a library.
 brew "terraform-ls"                # Terraform Language Server.
 brew "tlrc"                        # MAN replacement.
 brew "kubectx"                     # Kubernetes context switcher.
