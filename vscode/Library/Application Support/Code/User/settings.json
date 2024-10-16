@@ -180,5 +180,6 @@
     "vscode-kubernetes.minikube-path.mac": "/Users/marc/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
   "svelte.enable-ts-plugin": true,
-  "workbench.activityBar.location": "top"
+  "workbench.activityBar.location": "top",
+  "git.openRepositoryInParentFolders": "never"
 }
