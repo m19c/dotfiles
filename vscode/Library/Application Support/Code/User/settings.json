@@ -1,12 +1,12 @@
 {
   "editor.fontFamily": "MonoLisa, Fira Code, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 32,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 38,
   "editor.letterSpacing": 0,
   "editor.fontWeight": "400",
   "editor.lineNumbers": "relative",
   "editor.cursorBlinking": "solid",
-  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "workbench.colorTheme": "GitHub Dark Default",
   "terminal.integrated.fontFamily": "MesloLGM Nerd Font, MonoLisa, Fira Code, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.25,
@@ -166,7 +166,7 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "editor.stickyScroll.enabled": true,
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
@@ -181,5 +181,6 @@
   },
   "svelte.enable-ts-plugin": true,
   "workbench.activityBar.location": "top",
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "git.autofetch": true
 }
