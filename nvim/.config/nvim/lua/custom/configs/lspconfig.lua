@@ -37,7 +37,7 @@ lspconfig.astro.setup({
 	typescript = {},
 })
 
-local unconfigured_language_servers = { "tsserver", "tailwindcss", "eslint", "html", "cssls", "terraformls" }
+local unconfigured_language_servers = { "ts_ls", "tailwindcss", "eslint", "html", "cssls", "terraformls" }
 for _, uls in ipairs(unconfigured_language_servers) do
 	lspconfig[uls].setup({
 		on_attach = on_attach,

@@ -17,6 +17,11 @@ local plugins = {
 		},
 	},
 	{
+		"L3MON4D3/LuaSnip",
+		version = "v2.*",
+		build = "make install_jsregexp",
+	},
+	{
 		"nvim-orgmode/orgmode",
 		dependencies = {
 			{ "nvim-treesitter/nvim-treesitter", lazy = true },
@@ -86,6 +91,7 @@ local plugins = {
 				"eslint-lsp",
 				"html-lsp",
 				-- "prettier",
+				"ts_ls",
 				"stylua",
 				"gopls",
 				"rust-analyzer",
@@ -131,7 +137,7 @@ local plugins = {
 		event = "VeryLazy",
 		config = function()
 			-- Load treesitter grammar for org
-			require("orgmode").setup_ts_grammar()
+			-- require("orgmode").setup_ts_grammar()
 
 			-- Setup treesitter
 			require("nvim-treesitter.configs").setup({
