@@ -16,6 +16,7 @@ source ~/.config/zsh/lib/3p/zoxide.zsh
 source ~/.config/zsh/lib/lang/go.zsh
 source ~/.config/zsh/lib/lang/rust.zsh
 source ~/.config/zsh/lib/lang/js.zsh
+source ~/.config/zsh/lib/lang/python.zsh
 
 source ~/.config/zsh/lib/fzf.zsh
 
