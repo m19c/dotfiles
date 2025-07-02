@@ -30,10 +30,6 @@ cask "alt-tab"
 # Tiling window manager for macOS along the lines of xmonad.
 cask "amethyst"
 
-# https://github.com/alacritty/alacritty
-# Alacritty is the fastest terminal emulator in existence.
-cask "alacritty"
-
 # https://www.7-zip.org/
 # 7-Zip (high compression file archiver) implementation.
 brew "p7zip"
@@ -41,6 +37,9 @@ brew "p7zip"
 # https://tunnelblick.net/
 # Tunnelblick is a free, open source graphic user interface for OpenVPN on macOS.
 cask "tunnelblick"
+
+# ghostty terminal emulator.
+cask "ghostty"
 
 ###################################################################################################################
 ##### UTILITIES ###################################################################################################

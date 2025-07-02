@@ -41,7 +41,8 @@ stow -t $HOME \
   zsh \
   nvim \
   oh-my-posh \
-  git
+  git \
+  ghostty
 
 require_private_env "1Password Account ID" "OP_ACCOUNT"
 
