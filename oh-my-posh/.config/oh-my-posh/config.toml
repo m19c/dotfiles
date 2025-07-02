@@ -1,131 +1,166 @@
-"$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
-final_space = true
-version = 2
 console_title_template = '{{ .Shell }} in {{ .Folder }}'
+version = 3
+final_space = true
+
+[palette]
+  blue = '#89B4FA'
+  bright = '#FFFFFF'
+  closer = 'p:os'
+  lavender = '#B4BEFE'
+  os = '#ACB0BE'
+  pink = '#F5C2E7'
+  text = '#494D64'
+
+[secondary_prompt]
+  template = '❯❯ '
+  foreground = 'p:pink'
+  background = 'transparent'
+
+[transient_prompt]
+  template = '❯ '
+  background = 'transparent'
 
 [[blocks]]
-type ="rprompt"
+  type = 'rprompt'
+
   [[blocks.segments]]
-    type = "time"
-    style = "plain"
-    foreground = "p:os"
-    [properties]
-      time_format = "15:04:05"
+    foreground = 'p:os'
+    type = 'time'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
   [[blocks.segments]]
-    type = 'executiontime'
+    template = '({{ .FormattedMs }})'
     foreground = 'p:os'
     background = 'transparent'
-    template = '({{ .FormattedMs }})'
-    style = "plain"
+    type = 'executiontime'
+    style = 'plain'
+
     [blocks.segments.properties]
+      cache_duration = 'none'
       threshold = 2500
 
 [[blocks]]
-  type = "prompt"
-  alignment = "left"
+  type = 'prompt'
+  alignment = 'left'
   newline = true
+
   [[blocks.segments]]
-    type = 'session'
-    style = 'diamond'
-    foreground = 'p:text'
-    background = 'p:blue'
     leading_diamond = ''
     trailing_diamond = ''
     template = ' {{ if .SSHSession }} {{ end }}{{ .UserName }} '
+    foreground = 'p:text'
+    background = 'p:blue'
+    type = 'session'
+    style = 'diamond'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
   [[blocks.segments]]
+    template = '  {{ path .Path .Location }} '
+    foreground = 'p:text'
+    powerline_symbol = ''
+    background = 'p:pink'
     type = 'path'
     style = 'powerline'
-    powerline_symbol = ''
-    foreground = 'p:text'
-    background = 'p:pink'
-    template = '  {{ path .Path .Location }} '
+
     [blocks.segments.properties]
+      cache_duration = 'none'
       style = 'folder'
+
   [[blocks.segments]]
+    template = ' {{ if .UpstreamURL }}{{ url .UpstreamIcon .UpstreamURL }} {{ end }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }} '
+    foreground = 'p:bright'
+    powerline_symbol = ''
+    background = 'p:text'
     type = 'git'
     style = 'powerline'
-    powerline_symbol = ''
     foreground_templates = ['{{ if or (.Working.Changed) (.Staging.Changed) }}p:white{{ end }}', '{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:pink{{ end }}', '{{ if gt .Ahead 0 }}p:pink{{ end }}']
-    foreground = 'p:bright'
-    background = 'p:text'
-    template = ' {{ if .UpstreamURL }}{{ url .UpstreamIcon .UpstreamURL }} {{ end }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }} '
+
     [blocks.segments.properties]
       branch_max_length = 25
+      cache_duration = 'none'
       fetch_status = true
       fetch_upstream_icon = true
-  [[blocks.segments]]
-    type = "node"
-    style = "powerline"
-    powerline_symbol = ""
-    foreground = "#ffffff"
-    background = "#6CA35E"
-    template = "  {{ .Full }} "
-  [[blocks.segments]]
-    type = "go"
-    style = "powerline"
-    powerline_symbol = ""
-    foreground = "#ffffff"
-    background = "#7FD5EA"
-    template = " ﳑ {{ .Full }} "
-  [[blocks.segments]]
-    type = "rust"
-    style = "powerline"
-    powerline_symbol = ""
-    foreground = "#193549"
-    background = "#99908a"
-    template = "  {{ .Full }} "
-  [[blocks.segments]]
-    type = "terraform"
-    style = "powerline"
-    powerline_symbol = ""
-    foreground = "#000000"
-    background = "#ebcc34"
-    template = " {{.WorkspaceName}} "
-  [[blocks.segments]]
-    type = "java"
-    style = "powerline"
-    powerline_symbol = ""
-    foreground = "#ffffff"
-    background = "#4063D8"
-    template = "  {{ .Full }}"
 
-[transient_prompt]
-  background = 'transparent'
-  template = '❯ '
+  [[blocks.segments]]
+    template = '  {{ .Full }} '
+    foreground = '#ffffff'
+    powerline_symbol = ''
+    background = '#6CA35E'
+    type = 'node'
+    style = 'powerline'
 
-[secondary_prompt]
-  foreground = 'p:pink'
-  background = 'transparent'
-  template = '❯❯ '
+    [blocks.segments.properties]
+      cache_duration = 'none'
 
-[[tooltips]]
-type = "git"
-tips = [ "git", "g" ]
-style = "diamond"
-foreground = "p:os"
-background = "p:text"
-leading_diamond = ""
-trailing_diamond = ""
-template = "{{ .HEAD }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}"
-[tooltips.properties]
-  fetch_status = true
-  fetch_upstream_icon = true
+  [[blocks.segments]]
+    template = ' ﳑ {{ .Full }} '
+    foreground = '#ffffff'
+    powerline_symbol = ''
+    background = '#7FD5EA'
+    type = 'go'
+    style = 'powerline'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
+  [[blocks.segments]]
+    template = '  {{ .Full }} '
+    foreground = '#193549'
+    powerline_symbol = ''
+    background = '#99908a'
+    type = 'rust'
+    style = 'powerline'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
+  [[blocks.segments]]
+    template = ' {{.WorkspaceName}} '
+    foreground = '#000000'
+    powerline_symbol = ''
+    background = '#ebcc34'
+    type = 'terraform'
+    style = 'powerline'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
+  [[blocks.segments]]
+    template = '  {{ .Full }}'
+    foreground = '#ffffff'
+    powerline_symbol = ''
+    background = '#4063D8'
+    type = 'java'
+    style = 'powerline'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
 
 [[tooltips]]
-tips = ["k", "kns", "kubectl", "ktx"]
-type = "kubectl"
-style = "diamond"
-leading_diamond = ""
-trailing_diamond = ""
-foreground = "p:os"
-background = "p:text"
-template = " {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
+  leading_diamond = ''
+  trailing_diamond = ''
+  template = '{{ .HEAD }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}'
+  foreground = 'p:os'
+  background = 'p:text'
+  type = 'git'
+  style = 'diamond'
+  tips = ['git', 'g']
 
-[palette]
-os = '#ACB0BE'
-closer = 'p:os'
-pink = '#F5C2E7'
-lavender = '#B4BEFE'
-blue =  '#89B4FA'
-bright = '#FFFFFF'
-text = '#494D64'
+  [tooltips.properties]
+    fetch_status = true
+    fetch_upstream_icon = true
+
+[[tooltips]]
+  leading_diamond = ''
+  trailing_diamond = ''
+  template = ' {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} '
+  foreground = 'p:os'
+  background = 'p:text'
+  type = 'kubectl'
+  style = 'diamond'
+  tips = ['k', 'kns', 'kubectl', 'ktx']
