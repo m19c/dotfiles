@@ -46,11 +46,14 @@ cask "tunnelblick"
 ##### UTILITIES ###################################################################################################
 ###################################################################################################################
 
+brew "b2-tools"                    # Backblaze B2 command-line tool.
 brew "goenv"                       # Go Version Manager.
+brew "pipx"                        # Install and run Python applications in isolated environments.
 brew "libgit2@1.7"                 # C implementation of the Git core methods as a library.
 brew "terraform-ls"                # Terraform Language Server.
 brew "tlrc"                        # MAN replacement.
 brew "kubectx"                     # Kubernetes context switcher.
+brew "kustomize"                   # Kubernetes configuration management.
 brew "bottom"                      # A customizable cross-platform graphical process/system monitor for the terminal.
 brew "neovim"                      # Vim-fork focused on extensibility and usability.
 cask "google-cloud-sdk"            # Google Cloud SDK.
