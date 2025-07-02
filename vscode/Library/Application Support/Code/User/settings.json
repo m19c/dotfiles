@@ -1,12 +1,12 @@
 {
-  "editor.fontFamily": "MonoLisa, Fira Code, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "MesloLGM Nerd Font, MonoLisa Regular, Fira Code, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 15,
   "editor.lineHeight": 38,
   "editor.letterSpacing": 0,
   "editor.fontWeight": "400",
   "editor.lineNumbers": "relative",
   "editor.cursorBlinking": "solid",
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "terminal.integrated.fontFamily": "MesloLGM Nerd Font, MonoLisa, Fira Code, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.25,
@@ -67,7 +67,7 @@
     "editor.defaultFormatter": "golang.go"
   },
   "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform"
+    "editor.defaultFormatter": "gamunu.opentofu"
   },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml",
@@ -125,7 +125,8 @@
   // file specific configuration
   "files.associations": {
     "**/kubernetes/**/*.yaml": "helm",
-    "**/.github/workflows/**/*.yml": "yaml"
+    "**/.github/workflows/**/*.yml": "yaml",
+    "*.tofu": "terraform"
   },
   "json.schemas": [
     {
@@ -166,18 +167,18 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "editor.stickyScroll.enabled": true,
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "terraform.languageServer.enable": true,
+  "opentofu.languageServer.enable": true,
   "[python]": {
     "editor.formatOnType": true
   },
   "vs-kubernetes": {
     "vs-kubernetes.crd-code-completion": "disabled",
-    "vscode-kubernetes.minikube-path.mac": "/Users/marc/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+    "vscode-kubernetes.minikube-path.mac": "/Users/marc/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vscode-kubernetes.minikube-path-mac": "/Users/marc/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
   "svelte.enable-ts-plugin": true,
   "workbench.activityBar.location": "top",
