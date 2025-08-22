@@ -45,6 +45,12 @@ cask "ghostty"
 ##### UTILITIES ###################################################################################################
 ###################################################################################################################
 
+brew "libadwaita"                  # Adwaita GTK library for macOS.
+brew "yazi"                        # A terminal file manager written in rust.
+brew "podman"                      # Podman as a Docker alternative.
+brew "xk6"                         # A tool for building custom k6 binaries.
+brew "k6"                          # Modern load testing tool, using Go and JavaScript.
+brew "act"                         # Run GitHub Actions locally.
 brew "b2-tools"                    # Backblaze B2 command-line tool.
 brew "goenv"                       # Go Version Manager.
 brew "pipx"                        # Install and run Python applications in isolated environments.
