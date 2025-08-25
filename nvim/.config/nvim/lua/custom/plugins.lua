@@ -1,3 +1,5 @@
+local cmp = require("cmp")
+
 local plugins = {
 	{
 		"smoka7/multicursors.nvim",
@@ -99,6 +101,7 @@ local plugins = {
 				"dockerfile-language-server",
 				"graphql-language-service-cli",
 				"astro-language-server",
+				"yaml-language-server",
 
 				-- terraform ecosystem
 				"terraform-ls",
@@ -235,11 +238,24 @@ local plugins = {
 	},
 	{
 		"hrsh7th/nvim-cmp",
-		opts = function()
-			local M = require("plugins.configs.cmp")
-			table.insert(M.sources, { name = "crates " })
-			return M
-		end,
+		opts = {
+			mapping = {
+				["<CR>"] = cmp.mapping.confirm({
+					behavior = cmp.ConfirmBehavior.Insert,
+					-- when true, auto-selects the first item if nothing was selected,
+					-- making noselect below not take effect.
+					select = false,
+				}),
+				["<C-Space>"] = cmp.mapping.complete(),
+			},
+			-- adding noselect compared to default, to prevent autocomplete when typing,
+			-- and this is actually nvim-cmp defaults, but NvChad overrides this.
+			completion = {
+				completeopt = "menu,menuone,noselect",
+			},
+			-- for LSPs that (re)enable this:
+			preselect = cmp.PreselectMode.None,
+		},
 	},
 	{
 		"windwp/nvim-ts-autotag",
