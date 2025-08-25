@@ -6,6 +6,9 @@ tap "hashicorp/tap"
 ##### DESKTOP TOOLING #############################################################################################
 ###################################################################################################################
 
+# Install Google Cloud SDK.
+cask "gcloud-cli"
+
 # https://podman-desktop.io/
 # A desktop variant managing podman. 
 cask "podman-desktop"

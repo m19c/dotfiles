@@ -44,6 +44,19 @@ stow -t $HOME \
   git \
   ghostty
 
+if [ ! -f "/usr/local/bin/config-connector" ]; then
+  echo "installing config-connector"
+
+  CCT=$(mktemp -d)
+  pushd "$CCT" || exit
+
+  gcloud storage cp gs://cnrm/latest/cli.tar.gz .
+  tar zxf cli.tar.gz
+  sudo mv darwin/amd64/config-connector /usr/local/bin
+
+  popd || exit
+fi
+
 require_private_env "1Password Account ID" "OP_ACCOUNT"
 
 BACKGROUND_IMAGE=future.png
