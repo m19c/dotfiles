@@ -6,6 +6,10 @@ tap "hashicorp/tap"
 ##### DESKTOP TOOLING #############################################################################################
 ###################################################################################################################
 
+# https://podman-desktop.io/
+# A desktop variant managing podman. 
+cask "podman-desktop"
+
 # https://microsoft.com
 # Microsoft Office is a suite of office software developed by Microsoft.
 cask "microsoft-office-businesspro"
