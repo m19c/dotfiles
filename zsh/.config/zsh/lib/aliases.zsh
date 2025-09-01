@@ -25,9 +25,8 @@ alias top="btm"
 
 # devops / sre
 alias k=kubectl
-alias t=terraform
-alias tp=terraform plan
-alias ta=terraform apply
+alias t=tmux
+alias tx=tmuxinator
 alias ktx=kubectx
 alias kns=kubens
 
@@ -42,7 +41,5 @@ alias grep="grep --color"
 # override cat
 alias cat="bat"
 
-# override tmuxinator
-alias tn="tmuxinator"
-
+# other utilities
 alias lg="lazygit"
