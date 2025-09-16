@@ -28,6 +28,9 @@ else
   echo "kitty is already installed"
 fi
 
+echo "install claude"
+curl -fsSL https://claude.ai/install.sh | bash
+
 echo "installing homebrew packages"
 brew bundle
 
@@ -42,7 +45,8 @@ stow -t $HOME \
   nvim \
   oh-my-posh \
   git \
-  ghostty
+  ghostty \
+  htop
 
 if [ ! -f "/usr/local/bin/config-connector" ]; then
   echo "installing config-connector"
