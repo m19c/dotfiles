@@ -46,7 +46,8 @@ stow -t $HOME \
   oh-my-posh \
   git \
   ghostty \
-  htop
+  htop \
+  claude
 
 if [ ! -f "/usr/local/bin/config-connector" ]; then
   echo "installing config-connector"
