@@ -12,6 +12,7 @@ source ~/.config/zsh/lib/3p/nvm.zsh
 source ~/.config/zsh/lib/3p/mcfly.zsh
 source ~/.config/zsh/lib/3p/gh.zsh
 source ~/.config/zsh/lib/3p/zoxide.zsh
+source ~/.config/zsh/lib/3p/tmuxinator.zsh
 
 source ~/.config/zsh/lib/lang/go.zsh
 source ~/.config/zsh/lib/lang/rust.zsh

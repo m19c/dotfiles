@@ -26,7 +26,6 @@ alias top="btm"
 # devops / sre
 alias k=kubectl
 alias t=tmux
-alias tx=tmuxinator
 alias ktx=kubectx
 alias kns=kubens
 
