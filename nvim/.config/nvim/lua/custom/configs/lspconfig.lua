@@ -61,7 +61,8 @@ lspconfig.yamlls.setup({
 	},
 })
 
-local unconfigured_language_servers = { "ts_ls", "tailwindcss", "eslint", "html", "cssls", "terraformls" }
+local unconfigured_language_servers =
+	{ "kotlin_language_server", "ts_ls", "tailwindcss", "eslint", "html", "cssls", "terraformls", "pyright" }
 for _, uls in ipairs(unconfigured_language_servers) do
 	lspconfig[uls].setup({
 		on_attach = on_attach,

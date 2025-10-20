@@ -1,6 +1,7 @@
 local null_ls = require("null-ls")
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
+local builtins = null_ls.builtins
 local formatting = null_ls.builtins.formatting
 
 local sources = {
@@ -16,6 +17,9 @@ local sources = {
 	formatting.goimports_reviser,
 	formatting.golines,
 	formatting.terraform_fmt,
+	--	builtins.formatting.black,
+	--	builtins.diagnostics.ruff,
+	--	builtins.diagnostics.mypy,
 }
 
 null_ls.setup({

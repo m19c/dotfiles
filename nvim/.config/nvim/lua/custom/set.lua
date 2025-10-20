@@ -6,7 +6,18 @@ vim.cmd([[
 ]])
 
 vim.opt.cursorline = true
+
+-- standard cursor style where normal mode is a block while
+-- insert mode is a vertical bar
 vim.opt.guicursor = "n-v-c:block,i:ver4"
+
+-- more complex cursor style with blinking and different shapes
+-- vim.opt.guicursor = {
+-- 	"n-v-c:block-Cursor/lCursor",
+--	"i:ver25-blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
+--	"r-cr-o:hor20-Cursor/lCursor",
+--	"a:blinkwait700-blinkoff400-blinkon250",
+-- }
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
