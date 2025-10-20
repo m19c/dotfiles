@@ -47,7 +47,8 @@ stow -t $HOME \
   git \
   ghostty \
   htop \
-  claude
+  claude \
+  fastfetch
 
 if [ ! -f "/usr/local/bin/config-connector" ]; then
   echo "installing config-connector"
