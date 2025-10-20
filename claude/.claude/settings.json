@@ -55,5 +55,5 @@
     "MAX_MCP_OUTPUT_TOKENS": "40000"
   },
   "enableAllProjectMcpServers": false,
-  "enabledMcpjsonServers": []
+  "enabledMcpjsonServers": ["github"]
 }
