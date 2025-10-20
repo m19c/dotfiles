@@ -52,6 +52,9 @@ cask "ghostty"
 ##### UTILITIES ###################################################################################################
 ###################################################################################################################
 
+brew "operator-sdk"                # Operator SDK for building Kubernetes applications.
+brew "htop"                        # An interactive process viewer for Unix systems.
+brew "fastfetch"                   # A fast and highly customizable system information tool.
 brew "pass"                        # A password manager that uses GPG and Git.
 brew "mise"                        # A command-line tool to manage your macOS settings.
 brew "libadwaita"                  # Adwaita GTK library for macOS.
