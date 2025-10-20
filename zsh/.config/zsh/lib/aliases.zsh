@@ -42,3 +42,5 @@ alias cat="bat"
 
 # other utilities
 alias lg="lazygit"
+
+source-a() { set -a; for arg; do source $arg; done; set +a; }
