@@ -59,7 +59,8 @@ stow -t $HOME \
   ghostty \
   htop \
   claude \
-  fastfetch
+  fastfetch \
+  atuin
 
 if [ ! -f "/usr/local/bin/config-connector" ]; then
   echo "installing config-connector"

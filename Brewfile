@@ -52,6 +52,7 @@ cask "ghostty"
 ##### UTILITIES ###################################################################################################
 ###################################################################################################################
 
+brew "atuin"                       # Shell History.
 brew "gitmux"                      # A tmux git plugin.
 brew "operator-sdk"                # Operator SDK for building Kubernetes applications.
 brew "htop"                        # An interactive process viewer for Unix systems.
@@ -110,7 +111,6 @@ brew "gh"                          # GitHub CLI.
 brew "lazygit"                     # Simple terminal UI for git commands.
 brew "tmuxinator"                  # Manage complex tmux sessions easily.
 brew "grep"                        # GNU grep, egrep and fgrep.
-brew "mcfly"                       # Fly through your shell history.
 brew "tree-sitter"                 # Parser generator tool and incremental parsing library.
 brew "pinentry"                    # Passphrase entry dialog utilizing the Assuan protocol.
 brew "git-delta"                   # Syntax-highlighting pager for git and diff output.

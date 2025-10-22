@@ -1,0 +1,23 @@
+# The path to the Atuin SQLite database.
+db_path = "~/.local/share/atuin/history.db"
+
+# Configures whether or not to automatically sync, when logged in.
+auto_sync = false
+
+# Which style to use.
+style = "full"
+
+# When set to true, Atuin will default to immediately executing a
+# command rather than the user having to press enter twice. 
+# Pressing tab will return to the shell and give the user a chance
+# to edit.
+enter_accept = false
+
+# This flag enables a pseudo filter-mode named “workspace”: the filter is 
+# automatically activated when you are in a git repository.
+workspaces = true
+
+# The default filter to use when searching and being invoked from a shell
+# up-key binding.
+filter_mode_shell_up_key_binding = "workspace"
+
