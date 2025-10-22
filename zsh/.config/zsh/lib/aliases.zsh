@@ -29,6 +29,11 @@ alias t=tmux
 alias ktx=kubectx
 alias kns=kubens
 
+# claudi <3
+alias claudi=claude
+# for my east-german gspusi
+alias claudy=claudi
+
 # replacement ls
 alias l="eza -a --icons=always --group-directories-first --long --git "
 alias ls="eza -a --icons=always --group-directories-first --long --git "
