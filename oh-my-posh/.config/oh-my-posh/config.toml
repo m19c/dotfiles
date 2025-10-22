@@ -3,12 +3,12 @@ version = 3
 final_space = true
 
 [palette]
+  os = '#ACB0BE'
+  closer = 'p:os'
+  pink = '#F5C2E7'
+  lavender = '#B4BEFE'
   blue = '#89B4FA'
   bright = '#FFFFFF'
-  closer = 'p:os'
-  lavender = '#B4BEFE'
-  os = '#ACB0BE'
-  pink = '#F5C2E7'
   text = '#494D64'
 
 [secondary_prompt]
