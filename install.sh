@@ -28,8 +28,12 @@ else
   echo "kitty is already installed"
 fi
 
-echo "install claude"
-curl -fsSL https://claude.ai/install.sh | bash
+if [ ! $(which claude) ]; then
+  echo "install claude"
+  curl -fsSL https://claude.ai/install.sh | bash
+else
+  echo "claude is already installed"
+fi
 
 echo "installing homebrew packages"
 brew bundle

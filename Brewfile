@@ -133,7 +133,6 @@ brew "fzf"                         # Command-line fuzzy finder.
 brew "nvm"    # NodeJS Version Manager.
 brew "rust"   # Rust programming language.
 brew "go"     # Go programming language.
-brew "gradle" # Gradle build automation tool.
 
 ###################################################################################################################
 ##### BROWSER #####################################################################################################
