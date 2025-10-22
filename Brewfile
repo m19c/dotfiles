@@ -10,7 +10,7 @@ tap "hashicorp/tap"
 cask "gcloud-cli"
 
 # https://podman-desktop.io/
-# A desktop variant managing podman. 
+# A desktop variant managing podman.
 cask "podman-desktop"
 
 # https://microsoft.com
@@ -52,6 +52,7 @@ cask "ghostty"
 ##### UTILITIES ###################################################################################################
 ###################################################################################################################
 
+brew "gitmux"                      # A tmux git plugin.
 brew "operator-sdk"                # Operator SDK for building Kubernetes applications.
 brew "htop"                        # An interactive process viewer for Unix systems.
 brew "fastfetch"                   # A fast and highly customizable system information tool.
