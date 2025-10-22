@@ -38,6 +38,13 @@ fi
 echo "installing homebrew packages"
 brew bundle
 
+if ! kubectl view-secret -h >/dev/null 2>&1; then
+  echo "installing kubectl-view-secret plugin"
+  kubectl krew install view-secret
+else
+  echo "kubectl-view-secret is already installed"
+fi
+
 stow -t $HOME \
   alacritty \
   kitty \

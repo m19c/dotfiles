@@ -3,6 +3,7 @@ export ZDOTDIR="$HOME/.config/zsh"
 
 export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/Library/Python/3.9/bin:$HOME/.config/emacs/bin:/usr/local/bin
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 export EDITOR=vi
 export KUBE_EDITOR=vi
