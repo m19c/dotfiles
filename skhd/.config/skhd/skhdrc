@@ -1,0 +1,6 @@
+alt + shift - return : "open_pref_term.sh"
+
+# Disable macbook specific hotkeys
+cmd - h :
+cmd + option + h : 
+cmd + alt - h : say "hi"

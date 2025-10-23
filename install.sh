@@ -58,9 +58,14 @@ stow -t $HOME \
   git \
   ghostty \
   htop \
-  claude \
   fastfetch \
-  atuin
+  atuin \
+  claude \
+  skhd
+
+# ensure that skhd is up & running
+skhd --install-service
+skhd --start-service
 
 if [ ! -f "/usr/local/bin/config-connector" ]; then
   echo "installing config-connector"

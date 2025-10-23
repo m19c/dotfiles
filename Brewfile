@@ -1,6 +1,8 @@
 tap "mas-cli/tap"
 tap "tofuutils/tap"
 tap "hashicorp/tap"
+tap "yakitrak/yakitrak"
+tap "jackielii/tap"
 
 ###################################################################################################################
 ##### DESKTOP TOOLING #############################################################################################
@@ -52,6 +54,8 @@ cask "ghostty"
 ##### UTILITIES ###################################################################################################
 ###################################################################################################################
 
+brew "skhd-zig"
+brew "yakitrak/yakitrak/obsidian-cli"
 brew "atuin"                       # Shell History.
 brew "gitmux"                      # A tmux git plugin.
 brew "operator-sdk"                # Operator SDK for building Kubernetes applications.
