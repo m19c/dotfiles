@@ -6,6 +6,9 @@ alias vim='nvim'
 
 alias cd="z"
 
+# obsidian
+alias obs="obsidian-cli"
+
 # git
 alias gs="git status"
 alias gc="git commit"
@@ -47,5 +50,7 @@ alias cat="bat"
 
 # other utilities
 alias lg="lazygit"
+
+alias nb="newsboat"
 
 source-a() { set -a; for arg; do source $arg; done; set +a; }
