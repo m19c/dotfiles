@@ -105,6 +105,9 @@ local plugins = {
 				"astro-language-server",
 				"yaml-language-server",
 
+				-- databases
+				"postgrestools",
+
 				-- terraform ecosystem
 				"terraform-ls",
 				"tflint",
