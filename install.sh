@@ -61,7 +61,8 @@ stow -t $HOME \
   fastfetch \
   atuin \
   claude \
-  skhd
+  skhd \
+  newsboat
 
 # ensure that skhd is up & running
 skhd --install-service
