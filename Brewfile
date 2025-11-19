@@ -3,6 +3,7 @@ tap "tofuutils/tap"
 tap "hashicorp/tap"
 tap "yakitrak/yakitrak"
 tap "jackielii/tap"
+tap "zackriya-solutions/meetily"
 
 ###################################################################################################################
 ##### DESKTOP TOOLING #############################################################################################
@@ -50,10 +51,16 @@ cask "tunnelblick"
 # ghostty terminal emulator.
 cask "ghostty"
 
+
+cask "meetily"
+
 ###################################################################################################################
 ##### UTILITIES ###################################################################################################
 ###################################################################################################################
 
+brew "ollama"
+brew "docker-slim"
+brew "newsboat"
 brew "skhd-zig"
 brew "yakitrak/yakitrak/obsidian-cli"
 brew "atuin"                       # Shell History.
