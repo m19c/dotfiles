@@ -30,3 +30,10 @@ export SDKMAN_DIR="$HOME/.sdkman"
 if [[ -o interactive ]]; then
     fastfetch --config default
 fi
+
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+export EDITOR=nvim
+export KUBE_EDITOR=nvim

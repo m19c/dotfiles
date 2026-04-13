@@ -24,7 +24,7 @@ alias ping=gping
 alias du="dust"
 
 # alias for top
-alias top="btm"
+alias top="btop"
 
 # devops / sre
 alias k=kubectl
