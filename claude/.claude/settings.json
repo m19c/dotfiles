@@ -50,6 +50,12 @@
         "source": "github",
         "repo": "JuliusBrussee/caveman"
       }
+    },
+    "claude-code-skills": {
+      "source": {
+        "source": "github",
+        "repo": "alirezarezvani/claude-skills"
+      }
     }
   },
   "forceLoginMethod": "claudeai"
