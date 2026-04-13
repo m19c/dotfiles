@@ -1,0 +1,2 @@
+# AUR packages (installed with yay or paru)
+# Add one package name per line.
