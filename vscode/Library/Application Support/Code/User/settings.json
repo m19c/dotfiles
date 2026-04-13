@@ -54,55 +54,55 @@
   // language specific configuration
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.linkedEditing": true
+    "editor.linkedEditing": true,
   },
   "[go]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
   },
   "[terraform]": {
-    "editor.defaultFormatter": "gamunu.opentofu"
+    "editor.defaultFormatter": "gamunu.opentofu",
   },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
-    "editor.autoIndent": "full"
+    "editor.autoIndent": "full",
   },
   "[javascriptreact]": {
-    "editor.linkedEditing": true
+    "editor.linkedEditing": true,
   },
   "[typescriptreact]": {
-    "editor.linkedEditing": true
+    "editor.linkedEditing": true,
   },
   "[helm]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.useTabStops": false,
     "editor.autoIndent": "full",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[groovy]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[toml]": {
-    "editor.defaultFormatter": "bungcip.better-toml"
+    "editor.defaultFormatter": "bungcip.better-toml",
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
+    "editor.defaultFormatter": "svelte.svelte-vscode",
   },
 
   // useful options
@@ -126,31 +126,31 @@
   "files.associations": {
     "**/kubernetes/**/*.yaml": "helm",
     "**/.github/workflows/**/*.yml": "yaml",
-    "*.tofu": "terraform"
+    "*.tofu": "terraform",
   },
   "json.schemas": [
     {
       "fileMatch": ["Hayvanfile.yaml", "Hayvanfile.json"],
-      "url": "https://sep-hayvan.web.app/schema/manifest.json"
+      "url": "https://sep-hayvan.web.app/schema/manifest.json",
     },
     {
       "fileMatch": ["deployment.yaml"],
-      "url": "https://storage.googleapis.com/br-docs/shadowbroker.v11.json"
+      "url": "https://storage.googleapis.com/br-docs/shadowbroker.v11.json",
     },
     {
       "fileMatch": ["shadowbroker.yaml"],
-      "url": "https://storage.googleapis.com/br-docs/shadowbroker.v12.json"
-    }
+      "url": "https://storage.googleapis.com/br-docs/shadowbroker.v12.json",
+    },
   ],
   "yaml.schemas": {
     "https://sep-hayvan.web.app/schema/manifest.json": "Hayvanfile.yaml",
     "https://storage.googleapis.com/br-docs/shadowbroker.v11.json": "deployment.yaml",
-    "https://storage.googleapis.com/br-docs/shadowbroker.v12.json": "shadowbroker.yaml"
+    "https://storage.googleapis.com/br-docs/shadowbroker.v12.json": "shadowbroker.yaml",
   },
 
   // github copilot configuration
   "github.copilot.advanced": {
-    "length": 500
+    "length": 500,
   },
   "github.copilot.enable": {
     "*": true,
@@ -159,26 +159,26 @@
     "markdown": true,
     "helm": true,
     "terraform": true,
-    "go": true
+    "go": true,
   },
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
-    "**/.factorypath": true
+    "**/.factorypath": true,
   },
   "editor.stickyScroll.enabled": true,
   "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
+    "editor.defaultFormatter": "redhat.vscode-xml",
   },
   "opentofu.languageServer.enable": true,
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
   },
   "vs-kubernetes": {
     "vs-kubernetes.crd-code-completion": "disabled",
     "vscode-kubernetes.minikube-path.mac": "/Users/marc/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
-    "vscode-kubernetes.minikube-path-mac": "/Users/marc/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+    "vscode-kubernetes.minikube-path-mac": "/Users/marc/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
   },
   "svelte.enable-ts-plugin": true,
   "workbench.activityBar.location": "top",
@@ -193,11 +193,13 @@
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
-      "strings": true
+      "strings": true,
     },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "claudeCode.preferredLocation": "panel",
+  "chat.viewSessions.orientation": "stacked",
 }
