@@ -1,5 +1,6 @@
-local on_attach = require("plugins.configs.lspconfig").on_attach
-local capabilities = require("plugins.configs.lspconfig").capabilities
+local lsp = require("nvchad.configs.lspconfig")
+local on_attach = lsp.on_attach
+local capabilities = lsp.capabilities
 
 local options = {
   server = {

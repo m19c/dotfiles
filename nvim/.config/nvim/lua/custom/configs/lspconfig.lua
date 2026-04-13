@@ -1,15 +1,20 @@
-local configs = require("plugins.configs.lspconfig")
-local util = require("lspconfig/util")
+local configs = require("nvchad.configs.lspconfig")
 local on_attach = configs.on_attach
 local capabilities = configs.capabilities
 
-local lspconfig = require("lspconfig")
+local function with_root(markers)
+	return function(bufnr)
+		return vim.fs.root(bufnr, markers)
+	end
+end
 
 -- attach gopls to every directory containing a *.go file, go.mod and so on...
-lspconfig.gopls.setup({
+vim.lsp.config("gopls", {
 	cmd = { "gopls" },
 	filetypes = { "go", "gomod", "gowork", "gotmpl" },
-	root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+	root_dir = with_root({ "go.work", "go.mod", ".git" }),
+	on_attach = on_attach,
+	capabilities = capabilities,
 	settings = {
 		gopls = {
 			completeUnimported = true,
@@ -20,24 +25,27 @@ lspconfig.gopls.setup({
 		},
 	},
 })
+vim.lsp.enable("gopls")
 
-lspconfig.graphql.setup({
+vim.lsp.config("graphql", {
 	on_attach = on_attach,
 	capabilities = capabilities,
-	root_dir = lspconfig.util.root_pattern(".graphqlconfig", ".graphqlrc", "package.json", "schema.graphql"),
+	root_dir = with_root({ ".graphqlconfig", ".graphqlrc", "package.json", "schema.graphql" }),
 	flags = {
 		debounce_text_changes = 150,
 	},
 })
+vim.lsp.enable("graphql")
 
-lspconfig.astro.setup({
+vim.lsp.config("astro", {
 	on_attach = on_attach,
 	capabilities = capabilities,
 	configuration = {},
 	typescript = {},
 })
+vim.lsp.enable("astro")
 
-lspconfig.yamlls.setup({
+vim.lsp.config("yamlls", {
 	on_attach = on_attach,
 	capabilities = capabilities,
 	settings = {
@@ -60,6 +68,7 @@ lspconfig.yamlls.setup({
 		},
 	},
 })
+vim.lsp.enable("yamlls")
 
 local unconfigured_language_servers = {
 	"kotlin_language_server",
@@ -73,8 +82,9 @@ local unconfigured_language_servers = {
 	"postgrestools",
 }
 for _, uls in ipairs(unconfigured_language_servers) do
-	lspconfig[uls].setup({
+	vim.lsp.config(uls, {
 		on_attach = on_attach,
 		capabilities = capabilities,
 	})
+	vim.lsp.enable(uls)
 end
